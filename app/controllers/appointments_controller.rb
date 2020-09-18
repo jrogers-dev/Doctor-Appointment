@@ -11,6 +11,7 @@ class AppointmentsController < ApplicationController
 
     def create
         @appointment = Appointment.create(app_params)
+        redirect appointment_path(@appointment)
     end
 
 
