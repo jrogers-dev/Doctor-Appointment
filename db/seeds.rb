@@ -7,3 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+patient1 = Patient.create(name: "James Rogers") 
+doctor1 = Doctor.create(name: "Valentina Panic", practice: "Chiropractor", rating: 10) 
