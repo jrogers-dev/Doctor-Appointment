@@ -10,7 +10,7 @@ class AppointmentsController < ApplicationController
 
 
     def create
-
+        @appointment = Appointment.create(app_params)
     end
 
 
@@ -26,4 +26,8 @@ class AppointmentsController < ApplicationController
     def delete
 
     end
-end
+
+    def app_params
+        params.require(:appointment).permit()
+    end
+end 
