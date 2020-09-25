@@ -1,0 +1,6 @@
+<h1>Physician Directory</h1> 
+<br>
+<% @doctors.each do |doc| %>
+    <%= link_to "#{doc.name}, #{doc.practice}", doctor_path(doc) %>
+    <br>
+<% end %>
